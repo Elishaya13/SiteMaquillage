@@ -28,7 +28,7 @@
             <i class="iconify" data-icon="ci:phone-outline"></i>
             06.26.03.29.82
           </div>
-          <div id="mail">
+          <div id="mail-icone">
             <i class="iconify" data-icon="line-md:email"></i>
             maquillagedefete.yahoo.fr
           </div>
@@ -54,7 +54,7 @@
             height="200px"
           />
         </div>
-        <div class="container">
+        <div class="presentation-cont">
           <div class="pres-txt">
             <h1>Présentation</h1>
             <p>
@@ -106,15 +106,7 @@
         </div>
       </section>
       <section id="section-tattoo">
-        <div id="tattoo-grid">
-          <div id="img-tattoo">
-            <img
-              class="circular"
-              src="./assets/img/img-tatoo.jpg"
-              alt="tattoo1"
-              height="120px"
-            />
-          </div>
+        <div id="tattoo-flex">
           <div id="tattoo-txt">
             <h2>Tattoo pailletés</h2>
             <p>
@@ -126,14 +118,22 @@
               résistantes à l’eau.
             </p>
           </div>
-          <div id="img-tattoo2">
+          <div id="img-tattoo">
+            <img
+              class="circular"
+              src="./assets/img/img-tatoo.jpg"
+              alt="tattoo1"
+              height="120px"
+            />
+          </div>
+          <!-- <div id="img-tattoo2">
             <img
               class="circular"
               src="./assets/img/img-tatoo-2.jpg"
               alt="tattoo2"
               height="120px"
             />
-          </div>
+          </div> -->
         </div>
       </section>
       <section id="section-sculpture">
@@ -193,26 +193,30 @@
       <section id="section-contact">
         <h2>Formulaire de contact</h2>
         <form action="#">
-          <div id="form-grid">
-            <div>
+          <div id="formulaire">
+            <div id="input-firstname">
               <label for="name">Votre nom (obligatoire)</label>
-              <input type="text" id="name" />
+              <input type="text" id="name" placeholder="Votre nom" />
             </div>
-            <div>
+            <div id="input-mail">
               <label for="mail">Votre e-mail (obligatoire)</label>
-              <input type="text" id="mail" />
+              <input type="text" id="mail" placeholder="Votre e-mail" />
             </div>
-            <div>
+            <div id="sujet">
               <label for="sujet">Sujet</label>
-              <input type="text" id="sujet" />
+              <input
+                type="text"
+                id="sujet"
+                placeholder="Indiquez l'objet de votre demande"
+              />
             </div>
-            <div>
+            <div id="demande">
               <label for="message">Votre demande</label>
-              <textarea id="message"></textarea>
+              <textarea id="message" placeholder="Votre demande"></textarea>
             </div>
+            <button type="submit">Envoyer</button>
           </div>
         </form>
-        <button type="submit">Envoyer</button>
       </section>
     </div>
   </body>
