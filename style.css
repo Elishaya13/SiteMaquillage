@@ -40,6 +40,12 @@ button:hover {
   height: 15rem;
   border-radius: 50%;
 }
+a,
+a:visited {
+  text-decoration: none;
+  color: black;
+}
+
 /* **************Banniere******************* */
 header {
   position: fixed;
@@ -113,6 +119,7 @@ header {
 }
 #menu-nav {
   background-color: white;
+  /* background-color: var(--color2); */
   margin-top: 122px;
   box-shadow: 0px 6px 11px -8px var(--color1);
 }
@@ -134,18 +141,22 @@ ul {
   display: flex;
   justify-content: space-around;
   list-style-type: none;
-
   margin-right: 40px;
 }
 li {
   cursor: pointer;
   transition: 0.3s;
 }
-li:hover {
+li:hover,
+a:hover {
   /* font-weight: 600; */
-  background-color: var(--color1);
+  /* background-color: rgba(194, 151, 250, 0.78); */
+  background-color: var(--color2);
   color: white;
   border-radius: 2px;
+}
+a {
+  font-family: 'Courgette', sans-serif;
 }
 /* *************-presentation***************** */
 
@@ -162,6 +173,11 @@ li:hover {
   grid-template-columns: 35% 65%;
   position: relative;
   height: 22rem;
+  background: radial-gradient(
+    48.85% 25.36% at 50.03% 46.71%,
+    rgba(194, 151, 250, 0.78) 0%,
+    rgba(156, 87, 245, 0) 100%
+  );
 }
 /* #section-presentation::before {
   content: '';
@@ -216,6 +232,12 @@ li:hover {
   grid-template-rows: 1fr 1fr;
   grid-template-areas: 'maquillage-txt img-txt';
   gap: 2rem;
+  background: radial-gradient(
+    60.42% 17.45% at 66.88% 36.6%,
+    rgba(156, 87, 245, 0.27) 0%,
+    rgba(156, 87, 245, 0.177488) 61.36%,
+    rgba(156, 87, 245, 0) 100%
+  );
 }
 
 #img-maquillage {
@@ -247,6 +269,14 @@ li:hover {
   padding-top: 1rem;
 }
 /* *****************Tattoo************************* */
+#section-tattoo {
+  background: radial-gradient(
+    42.47% 19.95% at 42.04% 50%,
+    rgba(156, 87, 245, 0.27) 0%,
+    rgba(156, 87, 245, 0.143143) 71.33%,
+    rgba(156, 87, 245, 0) 100%
+  );
+}
 #tattoo-flex {
   display: flex;
   justify-content: space-around;
@@ -285,6 +315,11 @@ li:hover {
 #section-tarifs {
   padding-top: 2rem;
   position: relative;
+  background: radial-gradient(
+    37.68% 42.65% at 48.82% 47.93%,
+    #9c57f5 0%,
+    rgba(156, 87, 245, 0) 97.33%
+  );
 }
 #section-tarifs::before {
   content: '';
@@ -305,6 +340,12 @@ li:hover {
 #section-contact {
   padding-top: 2rem;
   padding-bottom: 1rem;
+  background: radial-gradient(
+    41.67% 41.67% at 51.6% 48.51%,
+    rgba(206, 169, 255, 0) 26.28%,
+    #cea9ff 66.26%,
+    rgba(249, 248, 249, 0) 100%
+  );
 }
 
 #formulaire {
