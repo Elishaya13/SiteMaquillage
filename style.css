@@ -9,6 +9,14 @@
   font-family: 'Raleway', sans-serif;
   box-sizing: border-box;
 }
+
+.anchor {
+  display: block;
+  height: 160px;
+  margin-top: -160px; /*same height as header*/
+  visibility: hidden;
+}
+
 h1 {
   font-size: 2rem;
 }
@@ -49,7 +57,7 @@ a:visited {
 /* **************Banniere******************* */
 header {
   position: fixed;
-  top: 0px;
+  top: 0;
   background-color: white;
   z-index: 1000;
   width: 100%;
@@ -177,6 +185,7 @@ a:hover:after {
   width: 900px;
   /* border: 1px solid black; */
   margin: auto auto;
+
   margin-top: 160px;
 }
 
@@ -297,7 +306,7 @@ a:hover:after {
   display: flex;
   justify-content: space-around;
   padding-top: 0.8rem;
-  padding-bottom: 4rem;
+  padding-bottom: 3rem;
   margin-right: 2.5rem;
   margin-left: 1.5rem;
 }
@@ -323,6 +332,8 @@ a:hover:after {
   width: 30%;
   margin-left: 35%;
   max-width: 650px;
+  margin-bottom: 4rem;
+
   /* max-height: 655px; */
   overflow: hidden;
   box-shadow: 8px 9px 51px 3px rgba(0, 0, 0, 0.61);
@@ -391,7 +402,6 @@ a:hover:after {
 /* *****************Tarifs et prestations************************* */
 
 #section-tarifs {
-  padding-top: 4rem;
   position: relative;
   background: radial-gradient(
     37.68% 42.65% at 48.82% 47.93%,
@@ -407,7 +417,7 @@ a:hover:after {
   background: rgba(0, 0, 0, 0.083);
   left: 50%;
   transform: translateX(-50%);
-  top: 2.5rem;
+  top: -1em;
 }
 #section-tarifs p {
   text-align: center;
