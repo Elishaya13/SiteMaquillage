@@ -224,32 +224,35 @@ a {
 
 /* ******Maquillage pour enfants************** */
 #section-maquillage {
-  padding-top: 1rem;
+  padding-top: 2rem;
   margin-right: 3rem;
   margin-left: 1.5rem;
+  margin-bottom: -1.5rem;
   display: grid;
   grid-template-columns: 80% 20%;
-  grid-template-rows: 1fr 1fr;
+  grid-template-rows: 2fr 1.5fr;
   grid-template-areas: 'maquillage-txt img-txt';
-  gap: 2rem;
+  column-gap: 1rem;
   background: radial-gradient(
-    60.42% 17.45% at 66.88% 36.6%,
+    32.5% 9.39% at 38.96% 33.4%,
     rgba(156, 87, 245, 0.27) 0%,
     rgba(156, 87, 245, 0.177488) 61.36%,
     rgba(156, 87, 245, 0) 100%
   );
 }
 
-#img-maquillage {
+#img-section-maquillage {
   text-align: center;
   margin-top: 2rem;
+}
+#img-maquillage {
+  margin-top: 6rem;
 }
 
 #materiel {
   display: flex;
   gap: 0px 20px;
-  grid-column-start: 1;
-  grid-column-end: 3;
+
   text-align: left;
   padding-top: 1rem;
   padding-left: 4rem;
@@ -289,11 +292,64 @@ a {
   margin-right: 2.5rem;
 }
 
-#img-tattoo img {
+#img-tattoo img,
+#img-tattoo-2 img {
   margin-top: 1.5rem;
   margin-right: -1.8rem;
 }
-
+#slider {
+  width: 30%;
+  margin-left: 35%;
+  max-width: 650px;
+  /* max-height: 655px; */
+  overflow: hidden;
+  box-shadow: 16px 11px 23px -6px rgba(0, 0, 0, 0.25);
+  border-radius: 30px;
+}
+#slider figure {
+  position: relative;
+  width: 500%;
+  margin: 0;
+  padding: 0;
+  font-size: 0;
+  left: 0;
+  text-align: center;
+  animation: 30s slidy infinite;
+}
+#slider figure img {
+  width: 20%;
+  height: auto;
+  float: left;
+}
+@keyframes slidy {
+  0% {
+    left: 0%;
+  }
+  20% {
+    left: 0%;
+  }
+  25% {
+    left: -100%;
+  }
+  45% {
+    left: -100%;
+  }
+  50% {
+    left: -200%;
+  }
+  70% {
+    left: -200%;
+  }
+  75% {
+    left: -300%;
+  }
+  95% {
+    left: -300%;
+  }
+  100% {
+    left: -400%;
+  }
+}
 /* #img-tattoo2 img {
   margin-top: 2.5rem;
 } */
@@ -313,7 +369,7 @@ a {
 /* *****************Tarifs et prestations************************* */
 
 #section-tarifs {
-  padding-top: 2rem;
+  padding-top: 3rem;
   position: relative;
   background: radial-gradient(
     37.68% 42.65% at 48.82% 47.93%,
@@ -329,7 +385,7 @@ a {
   background: rgba(0, 0, 0, 0.083);
   left: 50%;
   transform: translateX(-50%);
-  top: 0;
+  top: 1.5rem;
 }
 #section-tarifs p {
   text-align: center;
