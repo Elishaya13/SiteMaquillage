@@ -206,7 +206,7 @@ li {
   grid-template-rows: 2fr 1.3fr;
   column-gap: 1rem;
   background: radial-gradient(
-    32.5% 9.39% at 38.96% 33.4%,
+    33.37% 13.3% at 40.24% 24.14%,
     rgba(156, 87, 245, 0.27) 0%,
     rgba(156, 87, 245, 0.177488) 61.36%,
     rgba(156, 87, 245, 0) 100%
@@ -320,7 +320,7 @@ li {
   position: relative;
   background: radial-gradient(
     37.68% 42.65% at 48.82% 47.93%,
-    #9c57f5 0%,
+    #9b57f5b1 0%,
     rgba(156, 87, 245, 0) 97.33%
   );
 }
@@ -346,14 +346,14 @@ li {
   background: radial-gradient(
     41.67% 41.67% at 51.6% 48.51%,
     rgba(206, 169, 255, 0) 26.28%,
-    #cea9ff 66.26%,
+    #cea9ffdc 66.26%,
     rgba(249, 248, 249, 0) 100%
   );
 }
 #formulaire {
   margin-top: 1.5rem;
   margin-left: 2rem;
-  text-align: left;
+  text-align: center;
 }
 label {
   display: block;
@@ -364,10 +364,15 @@ input {
   height: 30px;
   transition: 0.3s;
   text-align: center;
+  border-radius: 20px;
+  border: 1px solid black;
 }
 input:focus,
 textarea:focus {
   outline-color: var(--color1);
+}
+#demande {
+  margin-top: 1rem;
 }
 textarea {
   margin-top: 3px;
@@ -375,12 +380,12 @@ textarea {
   width: 70%;
   resize: none;
   padding: 10px;
+  border-radius: 20px;
 }
 
 button[type='submit'] {
   cursor: pointer;
   margin-top: 1rem;
-  margin-left: 25%;
 }
 /* *************Footer************ */
 footer {
@@ -403,8 +408,9 @@ footer ul {
   width: 33%;
   min-width: 300px;
   margin: 0 auto;
+  margin-top: -1rem;
 }
-footer a {
+.a-icone {
   border: 1px solid #ccc;
   border-radius: 50px;
   width: 44px;
@@ -414,4 +420,13 @@ footer a {
   justify-content: center;
   align-items: center;
   transition: 0.3s;
+}
+.a-icone:hover {
+  border: 2px solid var(--color1);
+}
+#crea-lien {
+  padding-top: 0.6rem;
+}
+#crea-lien:hover {
+  font-weight: 800;
 }
