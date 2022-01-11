@@ -9,14 +9,12 @@
   font-family: 'Raleway', sans-serif;
   box-sizing: border-box;
 }
-
 .anchor {
   display: block;
   height: 160px;
   margin-top: -160px; /*same height as header*/
   visibility: hidden;
 }
-
 h1 {
   font-size: 2rem;
 }
@@ -31,7 +29,6 @@ p {
   text-align: left;
   padding-top: 1rem;
 }
-
 button {
   width: 150px;
   height: 30px;
@@ -42,7 +39,6 @@ button {
   box-shadow: 0px 3px 7px rgba(0, 0, 0, 0.25);
   font-family: 'Raleway';
 }
-
 .btn:hover {
   color: white;
 }
@@ -55,7 +51,6 @@ a:visited {
   text-decoration: none;
   color: black;
 }
-
 /* **************Banniere******************* */
 header {
   position: fixed;
@@ -68,11 +63,8 @@ header {
 #banner-grid {
   display: grid;
   grid-template-columns: 240px auto;
-  /* border: 1px solid red; */
   position: relative;
-  /* height: 160px; */
 }
-
 #logo {
   grid-row-start: 1;
   grid-row-end: 3;
@@ -83,7 +75,6 @@ header {
   box-shadow: 0px 3px 3px var(--color1);
   border-radius: 45px;
 }
-
 #logo h2 {
   font-size: 2.4rem;
   font-weight: 300;
@@ -96,7 +87,6 @@ header {
   text-align: center;
   padding-top: 0;
 }
-
 #coord {
   grid-column-start: 2;
   grid-row-start: 1;
@@ -129,7 +119,6 @@ header {
 }
 #menu-nav {
   background-color: white;
-  /* background-color: var(--color2); */
   margin-top: 122px;
   box-shadow: 0px 6px 11px -8px var(--color1);
 }
@@ -156,15 +145,12 @@ ul {
 li {
   cursor: pointer;
 }
-
-li a {
+.li-nav a {
   font-family: 'Courgette', sans-serif;
   display: inline-block;
   position: relative;
-  /* scroll-margin-top: 160px; */
 }
-
-li a::after {
+.li-nav a::after {
   content: '';
   position: absolute;
   width: 100%;
@@ -176,20 +162,16 @@ li a::after {
   transform-origin: bottom right;
   transition: transform 0.4s ease-out;
 }
-li a:hover:after {
+.li-nav a:hover:after {
   transform: scaleX(1);
   transform-origin: bottom left;
 }
 /* *************-presentation***************** */
-
 #wrapper {
   width: 900px;
-  /* border: 1px solid black; */
   margin: auto auto;
-
   margin-top: 160px;
 }
-
 #section-presentation {
   padding-top: 2rem;
   display: grid;
@@ -202,22 +184,11 @@ li a:hover:after {
     rgba(156, 87, 245, 0) 100%
   );
 }
-/* #section-presentation::before {
-  content: '';
-  position: absolute;
-  width: 90%;
-  height: 1px;
-  background: rgba(0, 0, 0, 0.083);
-  left: 50%;
-  transform: translateX(-50%);
-  top: 0;
-} */
 #img-presentation {
   display: block;
   margin: 1.8rem auto;
   height: 15rem;
 }
-
 .presentation-cont {
   display: inline-block;
   margin-left: 100px;
@@ -237,14 +208,12 @@ li a:hover:after {
 #pres-txt h1 {
   padding: 0.8rem;
 }
-
 #pres-txt button {
   margin-top: 20px;
   text-align: center;
   margin-left: 7rem;
   cursor: pointer;
 }
-
 /* ******Maquillage pour enfants************** */
 #section-maquillage {
   padding-top: 2rem;
@@ -263,7 +232,6 @@ li a:hover:after {
     rgba(156, 87, 245, 0) 100%
   );
 }
-
 #img-section-maquillage {
   text-align: center;
   margin-top: 2rem;
@@ -271,7 +239,6 @@ li a:hover:after {
 #img-maquillage {
   margin-top: 6rem;
 }
-
 #materiel {
   display: flex;
   gap: 0px 20px;
@@ -314,7 +281,6 @@ li a:hover:after {
 #tattoo-txt {
   margin-right: 2.5rem;
 }
-
 #img-tattoo img,
 #img-tattoo-2 img {
   margin-top: 1.5rem;
@@ -334,8 +300,6 @@ li a:hover:after {
   margin-left: 35%;
   max-width: 650px;
   margin-bottom: 4rem;
-
-  /* max-height: 655px; */
   overflow: hidden;
   box-shadow: 8px 9px 51px 3px rgba(0, 0, 0, 0.61);
   border-radius: 30px;
@@ -384,24 +348,7 @@ li a:hover:after {
     left: -400%;
   }
 }
-/* #img-tattoo2 img {
-  margin-top: 2.5rem;
-} */
-/* *****************Sculpture************************* */
-
-/* #sculpture-grid {
-  display: grid;
-  grid-template-columns: 2fr 3fr;
-  padding-bottom: 2rem;
-}
-#img-sculpture {
-  text-align: center;
-}
-#sculpture-txt p {
-  width: 500px;
-} */
 /* *****************Tarifs et prestations************************* */
-
 #section-tarifs {
   position: relative;
   background: radial-gradient(
@@ -436,7 +383,6 @@ li a:hover:after {
     rgba(249, 248, 249, 0) 100%
   );
 }
-
 #formulaire {
   margin-top: 1.5rem;
   margin-left: 2rem;
@@ -468,4 +414,37 @@ button[type='submit'] {
   cursor: pointer;
   margin-top: 1rem;
   margin-left: 25%;
+}
+/* *************Footer************ */
+footer {
+  padding: 2rem 0;
+  position: relative;
+}
+footer:before {
+  content: '';
+  position: absolute;
+  width: 90%;
+  height: 1px;
+  background: rgba(0, 0, 0, 0.083);
+  left: 50%;
+  transform: translateX(-50%);
+  top: 0;
+}
+footer ul {
+  display: flex;
+  justify-content: space-between;
+  width: 33%;
+  min-width: 300px;
+  margin: 0 auto;
+}
+footer a {
+  border: 1px solid #ccc;
+  border-radius: 50px;
+  width: 44px;
+  height: 44px;
+  display: inline-block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.3s;
 }
