@@ -201,7 +201,11 @@
       <span class="anchor" id="anchor-contact"></span>
       <section id="section-contact">
         <h2>Formulaire de contact</h2>
-        <form action="#">
+        <form
+          action="mailto:maquillagedefete@yahoo.fr"
+          method="get"
+          enctype="text/plain"
+        >
           <div id="formulaire">
             <div id="input-firstname">
               <label for="name">Votre nom (obligatoire)</label>
@@ -226,7 +230,9 @@
                 placeholder="Veuillez saisir votre demande"
               ></textarea>
             </div>
-            <button class="btn" type="submit">Envoyer</button>
+            <button class="btn" type="submit" name="submit" value="Envoyer">
+              Envoyer
+            </button>
           </div>
         </form>
       </section>
